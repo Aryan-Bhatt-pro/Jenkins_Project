@@ -8,20 +8,20 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x demo.py"
-                sh "python3 demo.py"
+                bat "chmod u+x demo.py"
+                bat "python3 demo.py"
             }
         }
         stage('Test Code 1') {
             steps {
-                sh "chmod u+x PassTestC.py"
-                sh "python3 PassTestC.py"
+                bat "chmod u+x PassTestC.py"
+                bat "python3 PassTestC.py"
             }
         }
         stage('Test Code 2') {
             steps {
-                sh "chmod u+x FailTestC.py"
-                sh "python3 FailTestC.py"
+                bat "chmod u+x FailTestC.py"
+                bat "python3 FailTestC.py"
             }
         }
     } 
