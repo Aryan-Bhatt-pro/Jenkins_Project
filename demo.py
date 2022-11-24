@@ -17,6 +17,7 @@ def PrimeChecker(num):
 
     # check if flag is True
     if flag:
-        return True
-    else:
         return False
+    else:
+        return True
+    
