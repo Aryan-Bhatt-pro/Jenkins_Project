@@ -10,7 +10,7 @@ class TestPrimeChecker(unittest.TestCase):
         self.assertEqual(res, True)
 
     def test_medium(self):
-        a = 68
+        a = 67
         res = PrimeChecker(a)
         self.assertEqual(res, True)
 
